@@ -19,7 +19,7 @@ contacts = ["Juler", "Micali"]
 
 # 2. Create a list of random messages
 # Add the contact value in the first message to make it more personal
-messages_template = [
+messages = [
     "Hola {name}!",
     "Recuerda que el día de hoy tenemos sesión del Círculo de IA a las (no se tdv)",
     "Nos vemos!"
@@ -46,7 +46,7 @@ def send_messages():
         time.sleep(2)  # Allow time for the chat to open
 
         # Send each message, format the first message to include the contact name
-        for message in messages_template:
+        for message in messages:
             formatted_message = message.format(name=contact) if '{name}' in message else message
             message_box = driver.switch_to.active_element  # Ensure focus is on the active message input
             message_box.send_keys(formatted_message)
@@ -58,6 +58,13 @@ send_messages()
 
 # Close the browser after sending messages
 driver.quit()
+
+# Notas:
+# En lugar de usar el Xpath para encontrar el cuadro de mensaje, vi que como se seleccionaba automaticamente tras poner
+# Enter en el nombre del contacto, preferi usar la funcion sendkeys para enviar el mensaje directamente.
+# Esto sirve de modo que incluso si no se encuentra un contacto, el código va a seguir corriendo porque pues apretar
+# Enter en wpp en el cuado de busqueda de contactos cuando no hay contactos no afecta en nada xd
+# Eso si, si el nombre no es igual o el primero en la lista, es probable que el mensaje se envie a otro contacto con nombre similar
 
 
 # The code below is suposed to extract the WhatsApp content and save it in a txt file but Wpp is encrypted and

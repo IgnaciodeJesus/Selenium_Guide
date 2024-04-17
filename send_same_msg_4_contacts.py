@@ -17,13 +17,43 @@ import random
 # 1. Create a list of WhatsApp contacts
 contacts = [
     "Juler",
-    "Micali"
+    "Adrian Camaron V2",
+    "Alexander Roman",
+    "Andre Juscamaita",
+    "Andrea Vasquez",
+    "Angel Adrian",
+    "Brando Trelles",
+    "Carlos Vega",
+    "Chupetin",
+    "Crisbeth",
+    "Culon",
+    "David Vela",
+    "Diana",
+    "Diego Alejandro",
+    "Favio Chavarry",
+    "Gabocho",
+    "Gabriel Andres",
+    "Gary Gabriel",
+    "Gerson Acha",
+    "Jeanpiero",
+    "Kevin Gomez",
+    "Micali",
+    "Renato Migliori",
+    "Ricardo Huapaya",
+    "Sergio Flores",
+    "Sofia Pinaya",
+    "Valeria Alexandra",
+    "Vanya Cordova",
+    "Walter Diaz",
+    "Yadhira Sarmiento",
+    "Valeria!",
+    "Claudia!"
 ]
 
 # 2. Create a list of random messages
 messages = [
     "Hola {name}!",
-    "Recuerda que el día de hoy tenemos sesión del Círculo de IA a las (no se tdv)",
+    "Recuerda llenar el formulario -> https://forms.gle/ovTfcemNy5ZYxRDn7",
     "Nos vemos!"
 ]
 

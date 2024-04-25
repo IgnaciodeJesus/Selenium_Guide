@@ -1,2 +1,2 @@
 # Selenium_Guide
-Web Scrapping commands explanied
+Web Scrapping commands explained
